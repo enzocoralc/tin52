@@ -459,3 +459,7 @@ pcbs:
         nets:
           from: enc_diode
           to: P7
+  plate:
+    outlines:
+      main:
+        outline: switch_plate
