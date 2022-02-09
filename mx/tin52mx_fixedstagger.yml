@@ -5,7 +5,7 @@ units:
   cy: 17.5        # Key spacing vertical
   cm: 15.6        # Key spacing minimum vertical 
   sf: 16          # Switch footprint (square)
-  angle: 15       # Angle between halves
+  angle: 18       # Angle between halves
   pinky_splay: 5  # Degrees of splay between pinky and ring columns
   ring_splay: 0   # Degrees of splay between ring and middle columns
   middle_splay: 0 # Degrees of splay between middle and index columns
@@ -58,7 +58,7 @@ points:
           row_net: P6
           column_net: P21
     columns.pinky:
-      spread: cx
+      spread: cm
       stagger: 0.1cy
       rows:
         bottom:
@@ -91,7 +91,7 @@ points:
           column_net: P20
     columns.ring:
       spread: cx
-      stagger: 1.3cy
+      stagger: 1cy
       rotate: -pinky_splay
       rows:
         bottom:
@@ -157,7 +157,7 @@ points:
           column_net: P18
     columns.index:
       spread: cx
-      stagger: -0.75cy
+      stagger: -0.45cy
       rotate: -middle_splay
       rows:
         bottom:
@@ -459,7 +459,7 @@ pcbs:
         nets:
           from: enc_diode
           to: P7
-  plate:
+  plate_fs:
     outlines:
       main:
         outline: switch_plate
